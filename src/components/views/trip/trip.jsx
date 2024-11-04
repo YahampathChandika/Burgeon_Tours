@@ -37,9 +37,6 @@ function trip() {
   const [name, setName] = useState('');
   const [passenger, setPassenger] = useState('');
 
-  
-  // const accountSid = 'ACdd3b6dfb08f44e8cc1370d5b10271c89';
-  // const authToken = 'b49378105c4cc3679fe19529ad2bcba4';
 
   const handleSubmit = async (event) => {
     event.preventDefault();
