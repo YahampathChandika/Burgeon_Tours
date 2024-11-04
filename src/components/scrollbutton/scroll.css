@@ -1,0 +1,30 @@
+.scroll-button {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .scroll-button.show {
+    opacity: 1;
+  }
+  
+  .scroll-button.hide {
+    opacity: 0;
+  }
+  
+  .scroll-button img {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .scroll-button {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }

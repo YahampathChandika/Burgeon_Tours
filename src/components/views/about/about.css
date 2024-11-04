@@ -1,0 +1,82 @@
+.about-con {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 60px;
+    padding-left: 180px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/images/bus-book-colombo.jpg');      
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+}
+
+.about-text-con {
+    width: 50%;
+}
+
+.about-text-head {
+    font-family: 'Playfair Display', serif;  
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    color: goldenrod;
+
+}
+
+.about-text-body {
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.about-img-con {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/bus-book-srilanka.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .about-con {
+        overflow-x: hidden;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('/images/bus-car-van.jpg');      
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0% 50%;
+    }
+
+    .about-text-con {
+        width: 100%;
+    }
+
+    .about-text-head {
+        color: white;
+    }
+
+    .about-text-body {
+        font-size: 1.6rem;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(255, 254, 254);
+    }
+}

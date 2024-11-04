@@ -1,0 +1,224 @@
+.customer-reviews-con {
+    width: 100%;
+    height: 500px;
+    background-image:  url('../../../../images/trip-tour.jpg');
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+  .customer-reviews {
+    width: 50%;
+    background-color: rgba(148, 139, 139, 0.8);
+    border-radius: 20px;
+    text-align: center;    
+  }
+  
+  .customer-reviews-head {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;  
+  }
+  
+  .slick-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-slider .slick-list {
+    margin: 0 -20px;
+  }
+  
+  .slick-slider .slick-slide {
+    padding: 0 20px;
+  }
+  
+  .review-item {
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+  }
+
+  .review-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+  
+  .review-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .review-text {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .review-more {
+    background-color: black;
+    color: goldenrod;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .review-more:hover {
+    background-color: goldenrod;
+    color: black;
+  }
+
+  .slick-arrow {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .slick-arrow:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-next {
+    right: 20px;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    font-size: 12px;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #0e0e0e;
+    width: 7px;
+    height: 7px;
+  }
+
+  .slick-dots li button:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+
+  .slick-dots li.slick-active button:before {
+    opacity: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .customer-reviews-con {
+        width: 100%;
+        height: 450px;
+        overflow-x: hidden;
+    }
+
+    .customer-reviews {
+        width: 90%;    
+    }
+
+    .customer-reviews-head {
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 20px;
+      justify-content: center;
+      color: rgb(0, 0, 0);
+      font-family: 'Playfair Display', serif;  
+    }
+
+    .review-item {
+      padding: 20px;
+    }
+  
+    .review-name {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+  
+    .review-text {
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 0 20px;
+    }
+
+    .slick-dots {
+        display: block;
+        bottom: 8px;
+
+    }
+
+    .slick-dots li button {
+        display: block;
+    }
+
+    .slick-arrow {
+        display: block;
+    }
+
+    .slick-prev {
+        display: block !important;
+        left: -5px;
+    }
+    
+    .slick-next {
+        display: block !important;
+        right: -5px;
+    }
+  }

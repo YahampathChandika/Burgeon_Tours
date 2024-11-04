@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) ;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    cursor: pointer;
+
+}
+
+.navbar__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.navbar__logo {
+    color: white;
+    text-decoration: none;
+    padding-left: 5rem;
+    font-family: 'Noto Serif', serif;    
+    font-size: 2.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 450px;
+    cursor: pointer;
+}
+
+.navbar__logo:hover {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.navbar__logo img {
+    transition: all 0.3s ease;
+}
+
+.navbar__logo img:hover {
+    transform: scale(1.05);
+}
+
+.flex {
+    width: 55vw;
+}
+
+.navbar__link {
+    color: white;
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-family: 'Merriweather', serif;
+    font-size: 2.25rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.navbar__link:hover {
+    color: goldenrod;
+    text-decoration: none;
+    box-shadow: 0px 2px 0px 0px rgba(218, 165, 32, 0.7);
+}
+
+.navbar__link:active {
+    color: goldenrod;
+}
+
+.nav-tog {
+    display: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.75rem;
+}
+
+.nav-tog:hover {
+    color: goldenrod;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar__logo {
+        width: 350px;
+        padding: 0;
+        font-size: 1.5rem;
+        width: 250px;
+    }
+
+    .navbar__items {
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-tog {
+        display: block;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .flex {
+        width: 60vw;
+    }
+
+    .navbar__items.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85) ;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar__items.active a {
+        margin: 10px 0;
+        color: #fff;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
